@@ -193,9 +193,9 @@
         .MiCS_hslider_content {
             max-width: 600px;
             margin: 0 auto;
-            padding-top: 60px;
             color: white;
             text-align: center;
+            padding-bottom: 20px;
         }
     
         .MiCS_hslider_content img {
@@ -204,17 +204,18 @@
     
         .MiCS_hslider_content h1 {
             font-family: "PetcoCircularTT-Regular", arial !important;
-            font-size: 48px;
+            font-size: 36px;
             color: #ffffff;
-            line-height: initial;
+            line-height: 36px;
         }
     
         .MiCS_hslider_content p {
             max-width: 560px;
-            padding: 45px 0px;
+            padding: 10px 0px 15px;
             font-family: "PetcoCircularTT-Regular", arial !important;
             font-size: 18px;
             color: #ffffff;
+            margin: 0 auto;
         }
     
         .hslider_btn_area a {
@@ -228,6 +229,8 @@
             color: #001952;
             font-size: 16px;
             font-weight: bold;
+            min-width: 211px;
+            height: 56px;
         }
     
         .hslider_btn_area a:hover {
@@ -238,32 +241,38 @@
         /** Sliders options **/
         .merrickgold-section__slider--content .slider_first {
             width: 100%;
-            min-height: 518px;
-            max-height: 518px;
-            background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_first_bg@2x");
+            min-height: 240px;
+            /* max-height: 518px; */
+            background-image: url("img/citrus_merrick_pov1-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            display: flex;
+            align-items: center;
         }
     
         .merrickgold-section__slider--content .slider_second {
             width: 100%;
-            min-height: 515px;
-            max-height: 515px;
-            background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_second_bg@2x");
+            min-height: 240px;
+            /* max-height: 518px; */
+            background-image: url("img/citrus_merrick_pov2-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            display: flex;
+            align-items: center;
         }
     
         .merrickgold-section__slider--content .slider_third {
             width: 100%;
-            min-height: 515px;
-            max-height: 515px;
-            background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_third_bg@2x");
+            min-height: 240px;
+            /* max-height: 518px; */
+            background-image: url("img/citrus_merrick_pov3-bg.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            display: flex;
+            align-items: center;
         }
     
         .merrickgold-section__slider--content .modified_container {
@@ -615,8 +624,51 @@
             max-width: 465px;
             white-space: normal;
         }
+
+        @media only screen and (min-width: 2100px) {
+            .merrickgold-section__slider--content .slider_first {
+                min-height: 420px;
+            }
+            .merrickgold-section__slider--content .slider_second {
+                min-height: 420px;
+            }
+            .merrickgold-section__slider--content .slider_third {
+                min-height: 420px;
+            }
+        }
+
+        @media only screen and (min-width: 1920px) and (max-width:2559px) {
+            .merrickgold-section__slider--content .slider_first {
+                min-height: 320px;
+            }
+            .merrickgold-section__slider--content .slider_second {
+                min-height: 320px;
+            }
+            .merrickgold-section__slider--content .slider_third {
+                min-height: 320px;
+            }
+        }
     
-        @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+            .merrickgold-section__slider--content .slider_first {
+                min-height: 190px;
+            }
+            .merrickgold-section__slider--content .slider_second {
+                min-height: 190px;
+            }
+            .merrickgold-section__slider--content .slider_third {
+                min-height: 190px;
+            }
+            .MiCS_hslider_content h1 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            .MiCS_hslider_content p {
+                max-width: 460px;
+                padding: 7px 0px 10px;
+                font-size: 14px;
+            }
+
             .MiCS_product_info {
                 min-height: 85px;
             }
@@ -861,27 +913,25 @@
             }
     
             .merrickgold-section__slider--content .slider_first {
-                min-height: 560px;
-                background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_first_mobile_bg@2x");
+                min-height: 405px;
+                background-image: url("img/citrus_merrick_pov1-bg_mob.jpg");
+                background-size: cover;
             }
     
             .merrickgold-section__slider--content .slider_second {
-                min-height: 560px;
-                background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_second_mobile_bg@2x");
+                min-height: 405px;
+                background-image: url("img/citrus_merrick_pov2-bg_mob.jpg");
+                background-size: cover;
             }
     
             .merrickgold-section__slider--content .slider_third {
-                min-height: 560px;
-                background-image: url("https://assets.petco.com/petco/image/upload/f_auto,q_auto/hslider_third_mobile_bg@2x");
+                min-height: 405px;
+                background-image: url("img/citrus_merrick_pov3-bg_mob.jpg");
+                background-size: cover;
             }
     
             .MiCS_hslider_content {
                 max-width: 250px;
-                padding-top: 185px;
-            }
-    
-            .MiCS_hslider_content {
-                padding-top: 25px;
             }
     
             .MiCS_hslider_content h1 {
@@ -1109,8 +1159,8 @@
                         <div class="slider_first">
                             <div class="modified_container" title="Photos of pets, apples and raw meat">
                                 <div class=" MiCS_hslider_content">
-                                    <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x">
+                                    <!-- <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
                                     <h1>TRY THE MERRICK DIFFERENCE</h1>
                                     <p>Making the right choice is easy with Merrick. Choose from a variety of options,
                                         including Grain Free or with Healthy Grains recipes.</p>
@@ -1131,8 +1181,8 @@
                         <div class="slider_second">
                             <div class="modified_container" title="Pets, carrots and raw meat">
                                 <div class=" MiCS_hslider_content">
-                                    <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x">
+                                    <!-- <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
                                     <h1>REAL WHOLE FOODS</h1>
                                     <p>We use premium ingredients from real, whole foods for superior nutrition and
                                         delicious taste.</p>
@@ -1153,15 +1203,13 @@
                         <div class="slider_third">
                             <div class="modified_container" title="A dog laying down with bags of Backcountry dog food">
                                 <div class=" MiCS_hslider_content">
-                                    <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x">
-                                    <h1>FULL SOURCE</h1>
-                                    <p>Full Source goes full nose-to-tail, utilizing more of the animal for a
-                                        sustainable,
-                                        nutrient-rich meal your dog is sure to love.</p>
+                                    <!-- <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
+                                    <h1>FEED THEM A PROTEIN-RICH ANCESTRAL DIET</h1>
+                                    <p>Delivers a unique combination of freeze-dried, raw-coated kibble with real freeze-dried raw pieces of meat, fish or poultry.</p>
                                     <div class="hslider_btn_area merrickgold-flex">
-                                        <a class="hslider_btn MiCS_left" href="#pov1_shopdog"
-                                            manual_cm_sp="sponsoredbrandpage:merrick:pov:3:fullsource:shopdog"
+                                        <a class="hslider_btn MiCS_left" href="https://www.petco.com/shop/en/petcostore/brand/merrick#facet:307445734561667670777101114114105991073266979910799111117110116114121&productBeginIndex:0&orderBy:&pageView:grid&minPrice:&maxPrice:&pageSize:&"
+                                            manual_cm_sp="sponsoredbrandpage:merrick:pov:3:feedthemaproteinrichdiet:shopdog"
                                             onclick="clickTrackLink(this);">Shop Dog</a>
                                     </div>
                                 </div>
@@ -3158,7 +3206,7 @@
     
         let jump = 1;
     
-        let interval = 5000;
+        let interval = 500000;
     
         let time;
     
