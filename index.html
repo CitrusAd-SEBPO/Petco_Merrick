@@ -100,6 +100,10 @@
             align-items: center;
             justify-content: center;
         }
+
+        .d-hide{
+            display: none;
+        }
     
     
         /* Slider Updated Raw JS */
@@ -200,6 +204,7 @@
     
         .MiCS_hslider_content img {
             max-width: 120px;
+            margin: 0 auto;
         }
     
         .MiCS_hslider_content h1 {
@@ -625,6 +630,7 @@
             white-space: normal;
         }
 
+
         @media only screen and (min-width: 2100px) {
             .merrickgold-section__slider--content .slider_first {
                 min-height: 420px;
@@ -676,6 +682,28 @@
             .MiCS_video_thumb .feature-video iframe {
                 max-width: 90%;
                 height: 300px;
+            }
+    
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            .merrickgold-section__slider--content .slider_first {
+                min-height: 190px;
+            }
+            .merrickgold-section__slider--content .slider_second {
+                min-height: 190px;
+            }
+            .merrickgold-section__slider--content .slider_third {
+                min-height: 190px;
+            }
+            .MiCS_hslider_content h1 {
+                font-size: 30px;
+                line-height: 30px;
+            }
+            .MiCS_hslider_content p {
+                max-width: 460px;
+                padding: 7px 0px 10px;
+                font-size: 14px;
             }
     
         }
@@ -855,6 +883,10 @@
         /* table, landscape tablet */
         /* mobile and small devices */
         @media only screen and (max-width: 767px) {
+
+            .d-hide{
+                display: block;
+            }
     
             .MiCS_video_thumb .feature-video iframe {
                 max-width: 100%;
@@ -907,6 +939,18 @@
             }
     
             /*slider*/
+            .hslider_btn_area a {
+                margin: 0;
+                padding: 10px 15px;
+                background-color: unset;
+                border: none;
+                text-transform: capitalize;
+                min-width: auto;
+                height: auto;
+                color: #fff;
+                text-decoration: underline;
+            }
+
             .merrickgold-section__slider {
                 width: 100%;
                 margin-bottom: 50px;
@@ -916,43 +960,45 @@
                 min-height: 405px;
                 background-image: url("img/citrus_merrick_pov1-bg_mob.jpg");
                 background-size: cover;
+                align-items: flex-start;
+                padding-top: 20px;
             }
     
             .merrickgold-section__slider--content .slider_second {
                 min-height: 405px;
                 background-image: url("img/citrus_merrick_pov2-bg_mob.jpg");
                 background-size: cover;
+                align-items: flex-start;
+                padding-top: 20px;
             }
     
             .merrickgold-section__slider--content .slider_third {
                 min-height: 405px;
                 background-image: url("img/citrus_merrick_pov3-bg_mob.jpg");
                 background-size: cover;
+                align-items: flex-start;
+                padding-top: 20px;
             }
     
             .MiCS_hslider_content {
-                max-width: 250px;
+                max-width: 100%;
             }
     
             .MiCS_hslider_content h1 {
                 font-size: 25px;
+                padding: 0 10px;
             }
     
             .MiCS_hslider_content p {
-                max-width: 250px;
-                padding: 10px 0px;
+                max-width: 370px;
+                margin: 0 auto;
+                padding: 10px;
                 font-size: 12px;
             }
     
             .hslider_btn_area.merrickgold-flex {
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-            }
-    
-            .hslider_btn_area a {
-                margin: 7px;
-                padding: 12px 39px;
-                font-size: 10px;
             }
     
             .navigation-auto {
@@ -1159,8 +1205,8 @@
                         <div class="slider_first">
                             <div class="modified_container" title="Photos of pets, apples and raw meat">
                                 <div class=" MiCS_hslider_content">
-                                    <!-- <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
+                                    <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" class="d-hide">
                                     <h1>TRY THE MERRICK DIFFERENCE</h1>
                                     <p>Making the right choice is easy with Merrick. Choose from a variety of options,
                                         including Grain Free or with Healthy Grains recipes.</p>
@@ -1181,8 +1227,8 @@
                         <div class="slider_second">
                             <div class="modified_container" title="Pets, carrots and raw meat">
                                 <div class=" MiCS_hslider_content">
-                                    <!-- <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
+                                    <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" class="d-hide">
                                     <h1>REAL WHOLE FOODS</h1>
                                     <p>We use premium ingredients from real, whole foods for superior nutrition and
                                         delicious taste.</p>
@@ -1203,8 +1249,8 @@
                         <div class="slider_third">
                             <div class="modified_container" title="A dog laying down with bags of Backcountry dog food">
                                 <div class=" MiCS_hslider_content">
-                                    <!-- <img
-                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x"> -->
+                                    <img
+                                        src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/merrickgold-logo@2x" class="d-hide">
                                     <h1>FEED THEM A PROTEIN-RICH ANCESTRAL DIET</h1>
                                     <p>Delivers a unique combination of freeze-dried, raw-coated kibble with real freeze-dried raw pieces of meat, fish or poultry.</p>
                                     <div class="hslider_btn_area merrickgold-flex">
