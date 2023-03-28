@@ -433,7 +433,6 @@
         .MiCS_best_seller_product_image {
             padding-bottom: 20px;
             border-bottom: 1px solid #212529;
-            margin-bottom: 20px;
         }
     
         .MiCS_product {
@@ -447,9 +446,20 @@
         }
     
         .MiCS_product_title {
-            font-size: 13px;
             color: #220C0B;
             text-decoration: none;
+            font-size: 13px;
+            line-height: 18px !important;
+            padding: 20px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            max-height: 4em;
+            margin-bottom: 24px;
+            /* visibility: visible;*/
         }
     
         .MiCS_product_button {
