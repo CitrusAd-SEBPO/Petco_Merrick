@@ -133,6 +133,22 @@
             display: none;
         }
 
+        .citrus_merrick_root{
+            /* overflow-y: hidden; Hide vertical scrollbar */
+            overflow-x: hidden; /* Hide horizontal scrollbar */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+            .citrus_merrick_root::-webkit-scrollbar {
+            display: none;
+            }
+
+            /* Hide scrollbar for IE, Edge and Firefox */
+            .citrus_merrick_root {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+            }
+
 
         /* Slider Updated Raw JS */
         .citrus_merrick_carousel {
@@ -668,6 +684,17 @@
             white-space: normal;
         }
 
+        .MiCS_tab_nav_area_wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .MiCS_tab_nav_area_wrapper {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        }
+
+
 
         @media only screen and (min-width: 2100px) {
             .merrickgold-section__slider--content .slider_first {
@@ -1098,11 +1125,18 @@
             }
 
             .merrickgold-section__tab-content {
-                width: 360%;
+                width: 97%;
                 padding: 0px;
                 overflow-x: auto;
                 overflow-y: hidden;
                 white-space: nowrap;
+            }
+
+            .citrus_merrick_tab_controls .splide__arrow{
+                display: none;
+            }
+            .splide__pagination{
+                display: none;
             }
 
             .merrickgold-section__listed_product_item {
@@ -1159,6 +1193,7 @@
             .MiCS_cat_best_tab_item {
                 padding: 15px 25px;
                 font-size: 12px;
+                min-width: 170px;
             }
 
             .MiCS_cat_best_tab_item {
@@ -1281,7 +1316,7 @@
     </style>
 </head>
 
-<body>
+<body class="citrus_merrick_root">
     <div class="merrickgold-section">
         <!-- Full Page -->
         <div class="merrickgold-section__maincontent">
